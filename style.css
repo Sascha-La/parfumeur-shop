@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Serif 4", serif;
+    display: flex;
+    flex-direction: column;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.shop,
+.contact-menu {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.logo {
+    font-size: 50px;
+    line-height: 62.65px;
+    width: 156px;
+    height: 63px;
+    margin-right: 639px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.container-navigation__menu-item,
+footer a {
+    font-size: 22px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.container-navigation__menu-item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.container-navigation__menu-item:hover,
+footer a:hover {
+    color: #262020;
+}
+
+.container-navigation input:focus {
+    outline-color: #b5b0b0;
+    outline-style: solid;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+}
+
+.site-search {
+    display: flex;
+}
+
+.site-search input {
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 4px 0 0 4px;
+}
+
+.site-search button {
+    background: #c2c0c0;
+    border: 1px solid rgb(118, 118, 118);
+    -webkit-text-stroke: 1px #c2c0c0;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+}
+
+.video-bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.effects {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(43, 43, 43, 0.55);
+}
+
+.video-bg__content {
+    z-index: 2;
+    color: #262020;
+    font-size: 30px;
+}
+
+#shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.shop-item {
+    width: calc(25% - 17px);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid #d9d9d9ba;
+}
+
+.shop-item .content {
+    padding: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.shop-item img {
+    width: 100%;
+    height: 200px;
+    flex-shrink: 3;
+    object-fit: cover;
+}
+
+.shop-item h1 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.shop-item p {
+    margin-top: 0;
+}
+
+.shop-item .price {
+    background-color: #b5b0b0;
+    padding: 4px 8px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-top: auto;
+    margin-right: 20px;
+}
+
+.shop-item {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-item .rating {
+    cursor: pointer;
+    color: #262020;
+}
+
+.shop-item .tags {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.shop-item .tag {
+    background: #d9d9d9a4;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.contact-menu {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#nothing-found {
+    color: #262020;
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+}
+
+.content p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.fa-star:before {
+    content: "\f005";
+}
+
+.footer {
+    display: flex;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.sketches-container {
+    width: 1200px;
+    margin: 40px auto;
+    display: flex;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.sketches {
+    width: 100%;
+    height: 300px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.50);
+}
+
+.sketches-title {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.input-wrapper {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-wrapper i {
+    font-size: 2rem;
+    color: #26201f;
+}
+
+.input-wrapper input {
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    border-bottom: 3px solid black;
+}
+
+.new-sketches {
+    font-size: 1.5rem;
+    width: 75%;
+}

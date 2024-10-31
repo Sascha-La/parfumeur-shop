@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Parfümeur</title>
+</head>
+
+<body>
+    <div class="shop">
+        <header>
+            <a href="#" class="logo">Parfümeur</a>
+            <nav class="container-navigation">
+                <a class="container-navigation__menu-item" href="#shop-items">Каталог</a>
+                <a class="container-navigation__menu-item" href="#contacts">Контакты</a>
+                <div class="site-search">
+                    <input type="search" id="search-input">
+                    <button type="button" id="search-btn" class="fa fa-search"></i>
+          </div>
+    </nav>
+  </header>
+  <section class="shop-main">
+    <div class="video-bg">
+      <video src="video/video-bg.mp4" type="video/mp4" autoplay muted loop></video>
+      <div class="effects"></div>
+      <div class="video-bg__content">
+         <h2>Новый аромат. Новое путешествие.</h2>
+      </div>
+   </div>
+  </section>
+</div>
+  <main class="container">
+    <div class="filters">
+      <div class="filters-sort">
+        <label for="sort">Сортировка:</label>
+        <select name="sort" id="sort">
+          <option selected value="alphabet">По алфавиту</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="cheap">Сначала дешевые</option>
+          <option value="rating">Рейтинг</option>
+        </select>
+      </div>
+    </div>
+    <section id="shop-items">
+    </section>
+    <p id="nothing-found">Ничего не найдено</p>
+    <section class ="sketches-container">
+        <div class="sketches">
+            <div id="sketches-title">
+                <h2>Мои предпочтения</h2>
+            </div>
+            <div class="input-wrapper">
+                <i class="fas fa-pencil-alt"></i>
+                <input id="input">
+            </div>
+            <div id="new-sketches" class="new-sketches"></div>
+        </div>
+    </section>
+  </div>
+  </main>
+  <footer id="contacts" class="contact-menu">
+    <a href="#" class="logo">Parfümeur</a>
+  </footer>
+  <template id="item-template">
+    <div class="shop-item">
+      <img src="">
+      <div class="content">
+        <div class="tags"></div>
+        <h1></h1>
+        <p></p>
+      </div>
+      <div class="footer">
+        <span class="price"></span>
+        <div class="rating"></div>
+      </div>
+    </div>
+    </div>
+  </template>
+  <script src="script.js"></script>
+</body>
+</html>
